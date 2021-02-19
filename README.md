@@ -1,6 +1,6 @@
 # Positioning-and-Facing-With-Respect-To
 A library to help with describing which direction an object is facing and positioned with regards to another object.
-![alt-text](https://github.com/Genso-0/Positioning-and-Facing-With-Respect-To/blob/master/Assets/Project/Information/mBAvWH9JuV.gif)
+![alt-text](https://github.com/Genso-0/Positioning-and-Facing-With-Respect-To/blob/master/Assets/PositioningAndFacing/Information/mBAvWH9JuV.gif)
 ### Built With
 Unity 2020.1.4f1 
 Built-in Render Pipeline
@@ -18,7 +18,7 @@ To sumarise: Object A gets the Relatives.cs file. You then add an Object B to th
 
 ## Usage
 An example use case can be found in the demo scene where you can see some text describing the relations between object A (main camera in this case) and object B (Suzanne).
-[See image](https://github.com/Genso-0/Positioning-and-Facing-With-Respect-To/blob/master/Assets/Project/Information/RelativesScriptOnCamera.png)
+[See image](https://github.com/Genso-0/Positioning-and-Facing-With-Respect-To/blob/master/Assets/PositioningAndFacing/Information/RelativesScriptOnCamera.png)
 <!-- LICENSE -->
 ## License
 
