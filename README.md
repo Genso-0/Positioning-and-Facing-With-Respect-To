@@ -21,11 +21,11 @@ An example use case can be found in the demo scene where you can see some text d
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Genso-0/Mesh-Gizmos/blob/master/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Genso-0/Positioning-and-Facing-With-Respect-To/blob/master/LICENSE) for more information.
 
 <!-- CONTACT -->
 ## Contact
 
 [@genso_0](https://twitter.com/genso_0)
 
-Project Link: [Mesh-Gizmos](https://github.com/Genso-0/Mesh-Gizmos)
+Project Link: [Positioning-and-Facing-With-Respect-To](https://github.com/Genso-0/Mesh-Gizmos)
