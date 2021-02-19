@@ -11,7 +11,7 @@ C#
 <!-- GETTING STARTED -->
 ## Getting Started
 1) Download project files.
-2) Go to Project->Scripts : Here you will find the Relatives.cs file. You attach this file to the Gameobject that you wish to know it's position and facing with relation to another object.
+2) Go to PositioningAndFacing->Scripts : Here you will find the Relatives.cs file. You attach this file to the Gameobject that you wish to know it's position and facing with relation to another object.
 3) Add a reference in the editor to the object you wish reference or in code.
 4)  
 To sumarise: Object A gets the Relatives.cs file. You then add an Object B to the reference slot in the Relatives.cs file in the editor. 
