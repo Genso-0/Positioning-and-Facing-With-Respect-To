@@ -1,6 +1,6 @@
 ﻿
 
-namespace RelativesLib
+namespace PositioningAndFacing
 {
     public static class DirectionsHelper
     {

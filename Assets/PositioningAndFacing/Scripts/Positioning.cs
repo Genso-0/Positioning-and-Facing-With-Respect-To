@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-namespace RelativesLib
+namespace PositioningAndFacing
 {
     public struct Positioning
     {

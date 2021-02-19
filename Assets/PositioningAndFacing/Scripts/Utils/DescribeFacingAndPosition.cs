@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 using UnityEngine.UI;
-namespace RelativesLib.Utilities
+namespace PositioningAndFacing.Utilities
 {
     public class DescribeFacingAndPosition : MonoBehaviour
     {

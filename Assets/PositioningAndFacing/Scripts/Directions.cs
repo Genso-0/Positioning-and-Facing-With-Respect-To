@@ -1,6 +1,6 @@
 ﻿using System; 
 
-namespace RelativesLib
+namespace PositioningAndFacing
 {
     [Flags]
     public enum Directions : byte

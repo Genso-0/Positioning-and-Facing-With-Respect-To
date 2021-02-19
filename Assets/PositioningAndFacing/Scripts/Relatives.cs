@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace RelativesLib
+namespace PositioningAndFacing
 {
     public class Relatives : MonoBehaviour
     {
