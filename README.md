@@ -28,4 +28,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Genso-0/Posi
 
 [@genso_0](https://twitter.com/genso_0)
 
-Project Link: [Positioning-and-Facing-With-Respect-To](https://github.com/Genso-0/Mesh-Gizmos)
+Project Link: [Positioning-and-Facing-With-Respect-To](https://github.com/Genso-0/Positioning-and-Facing-With-Respect-To)
