@@ -56,8 +56,8 @@ namespace RelativesLib
             else if (dot_forward > 0) dir.Add(Directions.Up);
 
             dot_forward = Vector3.Dot(this_forward, Vector3.right);
-            if (dot_forward < 0) dir.Add(Directions.Left);
-            else if (dot_forward > 0) dir.Add(Directions.Right);
+            if (dot_forward > 0) dir.Add(Directions.Left);
+            else if (dot_forward < 0) dir.Add(Directions.Right);
         }
     }
 }
