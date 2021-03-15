@@ -4,13 +4,13 @@ namespace PositioningAndFacing
 {
     public static class DirectionsHelper
     {
-        public static void Add(ref this Directions dir, Directions directionToAdd)
+        public static void Add(ref this Directions dir, Directions other)
         {
-            dir |= directionToAdd;
+            dir |= other;
         }
-        public static void Remove(ref this Directions dir, Directions directionToRemove)
+        public static void Remove(ref this Directions dir, Directions other)
         {
-            dir &= ~directionToRemove;
+            dir &= ~other;
         } 
         public static bool Equals(this Directions dir, Directions typeOfDirection)
         {
@@ -45,9 +45,25 @@ namespace PositioningAndFacing
             }
             return false;
         }
-        public static bool Contains(this Directions dir, Directions typeOfDirection)
+        /// <summary>
+        /// Checks if an enumeration is part of a combination
+        /// </summary>
+        /// <param name="dir"></param>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public static bool Contains(this Directions dir, Directions other)
         {
-            return (dir & typeOfDirection) != 0;
+            return (dir & other) != 0;
+        }
+        /// <summary>
+        /// Finds the overlap between two combinations
+        /// </summary>
+        /// <param name="dir"></param>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public static Directions FindCommon(this Directions dir, Directions other)
+        {
+            return dir & other;
         }
     }
 }
