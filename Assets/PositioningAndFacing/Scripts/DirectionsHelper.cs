@@ -19,8 +19,12 @@ namespace PositioningAndFacing
         /// <param name="other"></param>
         /// <returns></returns>
         public static bool IsEqual(this Directions dir, Directions other)
-        {
-            return (dir & other) == other;
+        { 
+            var temp1 = other;
+            var temp2 = dir;
+            temp1.Remove(dir);
+            temp2.Remove(other);
+            return (int)temp1 + (int)temp2 == 0;
         }
         /// <summary>
         /// Checks if an enumeration is part of a combination
