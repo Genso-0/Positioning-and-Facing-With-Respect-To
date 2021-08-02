@@ -31,16 +31,15 @@ namespace PositioningAndFacing
             var dot_forward = Vector3.Dot(directionFromTarget, other_forward);
             var dot_right = Vector3.Dot(directionFromTarget, other_right);
             var dot_up = Vector3.Dot(directionFromTarget, other_up);
-            // dots = new DOTS(dot_forward, dot_right, dot_up); 
 
-            if (dot_forward < 0) dir = Directions.Back;
-            else if (dot_forward > 0) dir = Directions.Forward;
+            if (dot_forward < -Small.comparisonToDot) dir = Directions.Back;
+            else if (dot_forward > Small.comparisonToDot) dir = Directions.Forward;
 
-            if (dot_right < 0) dir.Add(Directions.Left);
-            else if (dot_right > 0) dir.Add(Directions.Right);
+            if (dot_right < -Small.comparisonToDot) dir.Add(Directions.Left);
+            else if (dot_right > Small.comparisonToDot) dir.Add(Directions.Right);
 
-            if (dot_up < 0) dir.Add(Directions.Down);
-            else if (dot_up > 0) dir.Add(Directions.Up);
+            if (dot_up < -Small.comparisonToDot) dir.Add(Directions.Down);
+            else if (dot_up > Small.comparisonToDot) dir.Add(Directions.Up);
         }
     }
 }

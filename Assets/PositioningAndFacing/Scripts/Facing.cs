@@ -4,7 +4,7 @@ using UnityEngine;
 namespace PositioningAndFacing
 {
     public struct Facing
-    {
+    { 
         private Directions dir;
         public Directions direction { get { return dir; } }
         /// <summary>
@@ -48,16 +48,16 @@ namespace PositioningAndFacing
             laterally_inverted = dot_right < 0 ? true : false;
             vertically_inverted = dot_up < 0 ? true : false;
 
-            if (dot_forward < 0) dir = Directions.Back;
-            else if (dot_forward > 0) dir = Directions.Forward;
+            if (dot_forward < -Small.comparisonToDot) dir = Directions.Back;
+            else if (dot_forward > Small.comparisonToDot) dir = Directions.Forward;
 
             dot_forward = Vector3.Dot(this_forward, Vector3.up);
-            if (dot_forward < 0) dir.Add(Directions.Down);
-            else if (dot_forward > 0) dir.Add(Directions.Up);
+            if (dot_forward < -Small.comparisonToDot) dir.Add(Directions.Down);
+            else if (dot_forward > Small.comparisonToDot) dir.Add(Directions.Up);
 
             dot_forward = Vector3.Dot(this_forward, Vector3.right);
-            if (dot_forward > 0) dir.Add(Directions.Left);
-            else if (dot_forward < 0) dir.Add(Directions.Right);
+            if (dot_forward > Small.comparisonToDot) dir.Add(Directions.Left);
+            else if (dot_forward < -Small.comparisonToDot) dir.Add(Directions.Right);
         }
     }
 }
