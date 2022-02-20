@@ -17,9 +17,9 @@ namespace PositioningAndFacing.Utilities
 
         void Update()
         {
-            description.text = $"{subjectTransform.name} is facing {PrettifyRelativePosition(relatives_subject.facing_relativeToWorld.direction)} world\n" +
-                $"{subjectTransform.name} is facing {PrettifyRelativePosition(relatives_subject.facing_relativeToReference.direction)} {targetTransform.name}\n" +
-                $"{subjectTransform.name} is {PrettifyRelativePosition(relatives_subject.positioning_relativeToObject.direction)} {targetTransform.name}";
+            description.text =  
+                $"{subjectTransform.name} is facing {PrettifyRelativePosition(relatives_subject.facing_relativeToOther.direction)} {targetTransform.name}\n" +
+                $"{targetTransform.name} is {PrettifyRelativePosition(relatives_subject.positioning_relativeToOther.direction)} {subjectTransform.name}";
         }
        
         string PrettifyRelativePosition(Directions dir)

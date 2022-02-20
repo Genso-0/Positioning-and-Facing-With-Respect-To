@@ -7,9 +7,8 @@ namespace PositioningAndFacing
     public class Relatives : MonoBehaviour
     {
         public Transform reference;
-        public Facing facing_relativeToReference;
-        public Facing facing_relativeToWorld;
-        public Positioning positioning_relativeToObject;
+        public Facing facing_relativeToOther; 
+        public Positioning positioning_relativeToOther;
         [Tooltip("How frequently does this script update")]public float updateTime = 0.01f;
         void Start()
         { 
@@ -19,10 +18,9 @@ namespace PositioningAndFacing
         {
             var wait = new WaitForSeconds(updateTime);
             while (true)
-            {
-                facing_relativeToWorld.SetRelatives(transform);
-                facing_relativeToReference.SetRelatives(transform, reference);
-                positioning_relativeToObject.SetRelatives(transform, reference);
+            { 
+                facing_relativeToOther.SetRelatives(transform, reference);
+                positioning_relativeToOther.SetRelatives(transform, reference);
                 yield return wait;
             }
         }

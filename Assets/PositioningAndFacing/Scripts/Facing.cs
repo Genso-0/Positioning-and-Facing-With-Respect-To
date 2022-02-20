@@ -28,15 +28,7 @@ namespace PositioningAndFacing
         public void SetRelatives(Transform thisTransform, Transform reference)
         {
             SetRelatives(thisTransform.forward, thisTransform.right, thisTransform.up, reference.forward, reference.right, reference.up);
-        }
-        /// <summary>
-        /// Sets relative facing to world forward right and up.
-        /// </summary>
-        /// <param name="thisTransform"></param>
-        public void SetRelatives(Transform thisTransform)
-        {
-            SetRelatives(thisTransform.forward, thisTransform.right, thisTransform.up, Vector3.forward, Vector3.right, Vector3.up);
-        }
+        } 
         void SetRelatives(in Vector3 this_forward, in Vector3 this_right, in Vector3 this_up, in Vector3 other_forward, in Vector3 other_right, in Vector3 other_up)
         {
             dir = 0;
